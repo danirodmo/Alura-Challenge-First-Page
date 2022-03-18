@@ -154,13 +154,22 @@ a:visited{
     height:400px;
     box-sizing: border-box;
     border: 2px darkblue;
-    
 }
 
 .experience{
     display:flex;
     justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 } 
+
+.juegos{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(0, 4, 255, 0.685);
+    border-radius: 1%;
+    margin: 50px;
+}
 
 .btn {
     border: 0;
