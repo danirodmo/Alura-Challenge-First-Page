@@ -1,0 +1,448 @@
+body {
+    max-width: 70%;
+    margin: auto;
+    box-shadow: 0 .3rem 5rem rgba(0, 4, 255, 0.685);
+    color: #071cd8;
+    font-family: 'Times New Roman';
+}
+
+header{
+    border-radius: 20px;
+    margin: 0 ;
+    
+}
+
+.title{
+    color:white;
+    text-align: center;
+    font-size: 60px;
+    font-style:oblique;
+    font-weight: bold;
+    background-color: #071cd8;
+    opacity: 0.85;
+    padding: 10px;
+}
+
+nav{
+    background-color: #071cd8;
+    padding: 10px;
+    text-align: right;
+    display: flex;
+    justify-content:right;
+}
+
+a{
+    padding : 5px 10px;
+    margin: 20px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Times New Roman';
+    text-align: center;
+    text-decoration: none ;
+}
+
+.imagen{
+    width: 100%;
+}
+
+nav li{
+    display:inline;
+}
+
+a:hover{
+    background-color: white;
+    color: #071cd8;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+a:visited{
+    text-decoration:none;
+}
+
+.encabezado{
+    display:inline;
+    vertical-align: top;
+    margin: 7%;
+    width: 50%;
+    
+}
+
+.subtitle{
+    text-align: justify;
+    padding: 0 30px;
+    margin: 40px;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+.description{
+    text-align: justify;
+    font-size: 25px;
+    padding: 0 30px;
+    display: inline-block;
+    width: 45%;
+    margin: 0 40px;
+    box-sizing: border-box;
+}
+
+.perfil{
+    width: 20%;
+    display: inline;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 0 0 0 10px;
+}
+
+.perfil:hover{
+    transform: scale(1.5);
+}
+
+
+.hobbies{
+    padding: 0 30px;
+    margin: 40px;
+}
+
+.list{
+    text-align: center;
+    margin: 0 3%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.listhob{
+    text-align: center;
+    background: linear-gradient( rgba(255, 255, 0, 0.4) 40%,rgba(0, 0, 255, 0.4),rgba(255, 0, 0, 0.4));
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.listado{
+    font-size: 25px;
+    vertical-align: top;
+    text-align: center;
+    margin: 50px;
+    padding: 30px;    
+    border: 2px darkblue solid;
+    border-radius: 10px;
+    display: inline-block;
+    width: 35%;
+    height:500px;
+    box-sizing: border-box;
+}
+
+.listado:hover{
+    color: red;
+    text-decoration:dotted;
+    border-color: rgb(2, 187, 27);
+    transform: scale(1.3);
+}
+
+.estudios{
+    font-size: 25px;
+    vertical-align: top;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    display: inline-block;
+    width: 20%;
+    height:400px;
+    box-sizing: border-box;
+    border: 2px darkblue;
+    
+}
+
+.experience{
+    display:flex;
+    justify-content: space-around;
+} 
+
+.btn {
+    border: 0;
+    color: white;
+    font-weight: bold;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 0.5em;
+}
+
+.btn:hover{
+    cursor:pointer;
+}
+
+.contact0{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin: 0 3% 0 3%;
+    padding: 0 2%;
+}
+
+.contact1{
+    width: 100%;
+}
+
+.contact2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+form{
+    margin: 0px 40px;
+}
+
+form label, form legend, form option{
+    display: block;
+    font-size: 20px;
+    margin-top:20px;
+}
+
+.input-padron{
+    
+    padding: 10px 25px;
+    width: 100%;
+}
+
+fieldset{
+    margin-top: 40px;
+}
+
+select{
+    margin: 20px 0 20px 40px;
+    width: 200px;
+    height: 30px;
+}
+
+.checkbox{
+    margin:0px 40px;
+}
+.enviar{
+    margin: 5% 0 5% 25%;
+    width: 60%;
+    height: 10%;
+    padding: 15px 20px;
+    font-weight: bold;
+    color:white;
+    background: #071cd8;
+    border:none;
+    border-radius: 5px;
+    transition: 0.8s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: darkblue;
+    transform: scale(1.2);
+}
+
+footer{
+    font-size: 25px;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(0, 1, 51);
+    margin-top: 100px;
+}
+
+@media screen and (max-width:800px){
+    body{
+        max-width: 100%;
+    }
+    .title{
+        color:white;
+        text-align: center;
+        font-size: 40px;
+        font-style:oblique;
+        font-weight: bold;
+        background-color: #071cd8;
+        opacity: 0.85;
+        padding: 10px;
+    }
+    .subtitle{
+        text-align: justify;
+        padding: auto;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .menu a:hover{
+        background-color: white;
+        color: #071cd8;
+        font-weight: bolder;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .hobbies{
+        padding: 0 auto;
+        margin: 0;
+    }
+
+    .listhob{
+        text-align: center;
+        background: linear-gradient( rgba(255, 255, 0, 0.4) 40%,rgba(0, 0, 255, 0.4),rgba(255, 0, 0, 0.4));
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h1,h2{
+        text-align: center;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+
+    .listado:hover{
+        color: red;
+        text-decoration:dotted;
+        border-color: rgb(2, 187, 27);
+    }
+
+    .perfil{
+        width: 50%;
+        display: inline-flex;
+        border-radius: 50%;
+        box-sizing: border-box;
+        margin: 30px 50px 10px 50px;
+        text-align: center;
+    }
+
+    .encabezado{
+        display:inline;
+        vertical-align: top;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    .description{
+        text-align: justify;
+        font-size: 20px;
+        padding: 0 auto;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    .list{
+        display:flex;
+        margin:0;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+        font-size: 20px;
+        height: 650px;
+        align-content:center;
+    }
+
+    .estudios{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
+        text-align: center;
+        width: 35%;
+        
+        height: auto;
+        justify-content: center;
+    }
+
+    .listado{
+        font-size: 15px;
+        text-align: center;
+        margin: 10px 0;
+        
+        border: 1px darkblue solid;
+        padding: auto;
+        border-radius: 10px;
+        display: block;
+        width: 80%;
+        height:auto;
+        box-sizing: border-box;
+    }
+
+    .enviar{
+        margin:auto;
+        width: 100%;
+        text-align: center;
+        height: 10%;
+        padding: auto;
+        font-weight: bold;
+        color:white;
+        background: #071cd8;
+        border:none;
+        border-radius: 5px;
+        transition: 0.8s all;
+        cursor:pointer;
+    }
+    
+    .enviar:hover{
+        background: darkblue;
+        transform: scale(1.2);
+    }
+        
+    .contacto{
+        margin: 1%;
+        box-sizing: border-box;
+        display: inline;
+        width: 80%;
+    }
+
+    .contact0{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:center;
+        margin: 0 3% 0 3%;
+        padding: 0 2%;
+    }
+    
+    .contact1{
+        width: 70%;
+    }
+    
+    .contact2{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        
+    }
+    .contact label{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .input-padron{
+        margin:auto;
+        padding: auto;
+        width: 75%;
+    }
+
+    select{
+        margin: 20px 0 20px 0;
+        width: 200px;
+        height: 30px;
+    }
+
+    form label, form legend, form option{
+        display: inline;
+        font-size: 15px;
+        margin-top:20px;
+        width: 100%;
+        
+    }
+}
