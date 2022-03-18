@@ -21,6 +21,7 @@
                     <li class="menu"> <a href="#sobre-mi">ACERCA DE MI</a></li>
                     <li class="menu"> <a href="#hobbies">HOBBIES</a></li>
                     <li class="menu"><a href="#formacion">FORMACIÓN</a></li>
+                    <li class="menu"><a href="#experiencia">EXPERIENCIA</a></li>
                     <li class="menu"><a href="#contacto">CONTACTO</a></li>
                 </ul>
             </nav>
@@ -98,51 +99,67 @@
 
             </section>
 
-            <section class="contacto">
+            <section class="encabezado">
+                <h2 class="subtitle" id="experiencia">Experiencia:</h2>
+
+                <div class="experience">
+                    <a href="https://danirodmo.github.io/Alura-Challenge-Hangman/" target="_blank"><button class="btn" id="iniciar-juego" >JUGAR</button></a>
+                    <a href="https://github.com/danirodmo/Alura-Challenge-Hangman.git" target="_blank"><button class="btn" id="repositorio" >VER REPOSITORIO</button></a>
+                </div>
+
+                <div class="contact2">
+                    <a href="https://danirodmo.github.io/Alura-Challenge-Hangman/" target="_blank"><img src="Imagenes/ahorcado.png" alt="Ahorcado" width=80%></a>
+                </div>
+
+                
+
+            </section>
+
+            <section class="contact">
 
                 <h2 class="subtitle" id="contacto">Contacto:</h2>
                 
-                <div class="contact">
-                    <img src="Imagenes/contacto.jpg" width="100%"  height="90%" alt="Chicamocha" allow="picture-in-picture" display="inline-block">
+                <div class="contact0">
+                    <div class="contact1">
+                        <img src="Imagenes/contacto.jpg" width="100%"  height="90%" alt="Chicamocha" allow="picture-in-picture" >
+                    </div>
+                    
+                    <form class="contact2">
+                        <label for="nombreapellido">Nombre y Apellido</label>
+                        <input type="text" id="nombreapellido" class="input-padron" required>
+
+                        <label for="correoelectronico">Correo Electrónico</label>
+                        <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                        
+                        <fieldset>
+                            <legend>¿Cómo le gustaría recibir respuesta?</legend>
+
+                            <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                            
+                            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                            
+                            <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                            
+                        </fieldset>
+                    
+                        <fieldset>
+                            <legend>¿En cuál horario prefiere ser contactado?</legend>
+                            <select>
+                                <option>Mañana</option>
+                                <option>Tarde</option>
+                                <option>Noche</option>
+                            </select>
+                        </fieldset>
+                    
+                        <input type="submit" value="Enviar formulario" class="enviar">
+                    </form>
                 </div>
-                
-                <form class="contact">
-                    <label for="nombreapellido">Nombre y Apellido</label>
-                    <input type="text" id="nombreapellido" class="input-padron" required>
-
-                    <label for="correoelectronico">Correo Electrónico</label>
-                    <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
-
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
-
-                    <label for="mensaje">Mensaje</label>
-                    <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
-                    
-                    <fieldset>
-                        <legend>¿Cómo le gustaría recibir respuesta?</legend>
-
-                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
-                        
-                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
-                        
-                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
-                        
-                    </fieldset>
-                
-                    <fieldset>
-                        <legend>¿En cuál horario prefiere ser contactado?</legend>
-                        <select>
-                            <option>Mañana</option>
-                            <option>Tarde</option>
-                            <option>Noche</option>
-                        </select>
-                    </fieldset>
-                    
-                    <input type="submit" value="Enviar formulario" class="enviar">
-
-                </form>
-                
             </section>
         </main>
 
